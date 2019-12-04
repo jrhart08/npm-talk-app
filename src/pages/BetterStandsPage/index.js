@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  memo,
+  useEffect,
+  useState,
+} from 'react';
 import groupBy from 'lodash/groupBy';
 import getStands from '../../api/getStands';
 import ChoiceBoxSelect from '../../reusables/ChoiceBoxSelect';
 
-const Section = ({ series, stands }) => {
+const Section = memo(({ series, stands }) => {
   const [selected, setSelected] = useState(stands[0]);
 
   return (
     <div>
       <h1>{series}</h1>
-    <ChoiceBoxSelect
-      value={selected}
-      options={stands}
-      onChange={setSelected}
-      keyBy={stand => stand.id}
-      imageBy={stand => stand.thumbnail}
-      labelBy={stand => `${stand.name} (${stand.user})`}
-    />
+      <ChoiceBoxSelect
+        value={selected}
+        options={stands}
+        onChange={setSelected}
+        keyBy={stand => stand.id}
+        imageBy={stand => stand.thumbnail}
+        labelBy={stand => `${stand.name} (${stand.user})`}
+      />
     </div>
   )
-}
+});
 
 const BetterStandsPage = () => {
   const [standsBySeries, setStands] = useState([]);
