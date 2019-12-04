@@ -1,3 +1,9 @@
+# NPM talk demo app
+
+The app used in the presentation for demonstrating sample libraries.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
