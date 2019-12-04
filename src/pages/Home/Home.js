@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import useKeyListener from '@jrh/npm-talk-standard-version/lib/useKeyListener';
-import { useKeyListener } from '@jrh/npm-talk-standard-version';
+// import { useKeyListener } from '@jrh/npm-talk-standard-version';
+import { useKeyListener } from '@jrh/lerna-hooks';
 
 const App = () => {
   const [keyPresses, setKeyPresses] = useState(0);

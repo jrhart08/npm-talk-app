@@ -5,7 +5,8 @@ import React, {
 } from 'react';
 import groupBy from 'lodash/groupBy';
 import getStands from '../../api/getStands';
-import ChoiceBoxSelect from '../../reusables/ChoiceBoxSelect';
+// import ChoiceBoxSelect from '../../reusables/ChoiceBoxSelect';
+import ChoiceBoxSelect from '@jrh/lerna-components/lib/ChoiceBoxSelect';
 
 const Section = memo(({ series, stands }) => {
   const [selected, setSelected] = useState(stands[0]);
