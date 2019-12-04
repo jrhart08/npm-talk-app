@@ -16,7 +16,7 @@ const HeaderDiv = styled.div`
   padding: 1em;
   
   display: flex;
-  
+
   & > ul {
     list-style-type: none;
     overflow: hidden;
@@ -39,7 +39,8 @@ const Header = () => (
     <ul>
       <li>
         <Link to="/">Home</Link>
-        <Link to="/example">Example</Link>
+        <Link to="/stands-bad">Stands (Bad)</Link>
+        <Link to="/stands-better">Stands (Better)</Link>
       </li>
     </ul>
   </HeaderDiv>
