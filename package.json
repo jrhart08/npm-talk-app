@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jrh/lerna-components": "^2.1.1",
-    "@jrh/lerna-hooks": "^2.1.1",
+    "@jrh/lerna-components": "^2.1.2",
+    "@jrh/lerna-hooks": "^2.1.2",
+    "@jrh/npm-talk-react-hooks": "^1.4.0",
+    "@jrh/npm-talk-utils": "^1.3.0",
     "delay": "^4.3.0",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
